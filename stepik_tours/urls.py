@@ -18,9 +18,9 @@ from django.urls import path
 from tours import views
 
 urlpatterns = [
-    path('', views.main_view),
-    path('departure/<str:departure>', views.departure_view),
-    path('tour/<int:id>', views.tour_view),
+    path('', views.main_view, name='main'),
+    path('departure/<str:departure>', views.departure_view, name='tours_by_departure'),
+    path('tour/<int:tour_id>', views.tour_view, name='tour'),
 ]
 
 handler404 = views.custom_handler404
