@@ -25,9 +25,9 @@ SECRET_KEY = 'w7*^0=td*%v!s%m*4pwz=y1r41(%rbpu+@3i=lqy=t_4b^3ok$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
-
+STATIC_ROOT = 'static'
 # Application definition
 
 INSTALLED_APPS = [
